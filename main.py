@@ -95,11 +95,11 @@ def play_game():
                     x1_change = 0
                     y1_change = snake_block
 
-        x1 += x1_change
-        y1 += y1_change
-
         if x1 >= dis_width or x1 < 0 or y1 >= dis_height or y1 < 0:
             game_close = True
+
+        x1 += x1_change
+        y1 += y1_change
 
         dis.fill(blue)
         pygame.draw.rect(
